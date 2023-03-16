@@ -1,0 +1,119 @@
+/* ---------------------------MAIN-NEWS-PAGE----------------------------------------------------- */
+
+.main__news-page {
+  padding-bottom: 100px;
+}
+
+.news-page__title:not(:last-child) {
+  margin-bottom: 20px !important;
+}
+
+.news-page__subtitle {
+  font-size: 14px;
+  line-height: 142.8571428571%;
+  font-weight: 300;
+}
+
+.news-page__items {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+}
+
+.hidden-news {
+  display: none;
+}
+
+.newspa-item__img {
+  position: relative;
+  padding: 0 0 55% 0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.newspa-item__img img {
+  position: absolute;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.newspa-item__title {
+  font-size: 15px;
+  line-height: 126.6666666667%;
+  font-weight: 700;
+}
+
+.newspa-item__title:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.newspa-item__date {
+  display: block;
+  font-size: 12px;
+  line-height: 166.6666666667%;
+  margin-bottom: 7px;
+}
+
+.newspa-item__intro {
+  font-size: 12px;
+  line-height: 166.6666666667%;
+}
+
+.newspa-item__link {
+  color: #FFC14B;
+  font-size: 12px;
+  line-height: 166.6666666667%;
+  text-decoration: underline;
+  -webkit-transition: var(--default__transition);
+  -o-transition: var(--default__transition);
+  transition: var(--default__transition);
+}
+
+.news-page__button {
+  margin: 50px auto 0;
+}
+
+.hidden-button {
+  display: none !important;
+}
+
+@media (min-width: 991.98px) {
+  .newspa-item__link:hover {
+    text-decoration: underline;
+    color: #ffb01e;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .news-page__title:not(:last-child) {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main__news-page {
+    padding-bottom: 60px;
+  }
+
+  .news-page__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .main__news-page {
+    padding-bottom: 40px;
+  }
+
+  .news-page__button {
+    margin: 30px auto 0;
+  }
+}

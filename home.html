@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221201231001">
+    <link rel="shortcut icon" href="img/icons/logo.ico">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header.html -->
+        
+        <!-- так как здесь специфичные стили для Header, то его чисто кодом подключаю -->
+        <header class="header home-page__header">
+            <section class="header-block">
+                <div class="header__container">
+                    <div class="header-contacts header__block-contacts _anim-items _anim-no-hide">
+                        <div class="header-contact">
+                            <p>Отдел бронирования</p>
+                            <div class="header-contact__link link-animation">
+                                <a href="tel:+79259224200">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                            </div>
+                        </div>
+                        <div class="header-contact">
+                            <p>Прием и размещение</p>
+                            <div class="header-contact__link link-animation">
+                                <a href="tel:+74997558888">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-logo common-logo _anim-items _anim-no-hide _anim-show">
+                        <a href="/home.html">
+                            <svg class="sprite-icon__header-logo">
+                                <use href="img/icons/icons.svg#header_logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-actions _anim-items _anim-no-hide">
+                        <div class="header-actions__simple">
+                            <div class="header-action action-language">
+                                <button class="language-selector__russian lang_selector">Ру</button>
+                                <button class="language-selector__english lang_selector">Eng</button>
+                            </div>
+                            <div class="header-action action-enter">
+                                <button class="action-enter__button">
+                                    <svg class="sprite-icon__header_enter">
+                                        <use href="img/icons/icons.svg#header_enter"></use>
+                                    </svg>
+                                    <span>Войти</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header-action__burger ">
+                            <button class="header__burger-button">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Меню при клике на бургер -->
+            <section class="header__burger-menu ">
+                <div class="burger-menu__container">
+                    <h1 class="burger-menu__title">Меню</h1>
+
+                    <div class="burger-menu__navigation menu-nav">
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Тарифы
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="" class="link-animation">Аренда VIP автомобиля</a>
+                                                <a href="" class="link-animation">Тарифы 2022-2023</a>
+                                                <a href="" class="link-animation">Новогодний тариф</a>
+                                                <a href="" class="link-animation">каникулы и подарки</a>
+                                                <a href="" class="link-animation">способы оплаты</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item">
+                                        <a href="/rooms.html" class="column-nav__link link-animation">номера</a>
+                                    </li>
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Корпоративным клиентам
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="" class="link-animation">Конференц залы</a>
+                                                <a href="" class="link-animation">Банкеты</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item">
+                                        <a href="/about.html" class="column-nav__link link-animation">о нас</a>
+                                    </li>
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Spa
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="" class="link-animation">Бассейны</a>
+                                                <a href="" class="link-animation">Сауны</a>
+                                                <a href="" class="link-animation">Спорт-комплекс</a>
+                                                <a href="" class="link-animation">SPA — меню </a>
+                                                <a href="" class="link-animation">Меню салона красоты</a>
+                                                <a href="" class="link-animation">SPA для двоих</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-nav__column column-nav">
+                            <nav class="column-nav__block">
+                                <ul class="column-nav__list">
+                                    <li class="column-nav__item">
+                                        <a href="/news.html" class="column-nav__link link-animation">новости</a>
+                                    </li>
+                                    <li class="column-nav__item">
+                                        <a href="/gallery.html" class="column-nav__link link-animation">галерея</a>
+                                    </li>
+                                    <li class="column-nav__item drop-down__block-nav">
+                                        <button class="drop-down__button">
+                                            Контакты
+                                            <svg class="sprite-icon__header_vector-menu">
+                                                <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="drop-down__content-nav">
+                                            <div class="drop-down__list-nav">
+                                                <a href="/contacts.html" class="link-animation">Схема проезда</a>
+                                                <a href="" class="link-animation">Политика конфиденциальности</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                    <div class="header-contacts burger-menu__contacts">
+                        <div class="header-contact">
+                            <p>Отдел бронирования</p>
+                            <div class="header-contact__link">
+                                <a href="tel:+79259224200">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                            </div>
+                            <div class="header-contact__link">
+                                <a href="tel:+79259224201">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (925) 922-42-01</a>
+                            </div>
+                        </div>
+                        <div class="header-contact">
+                            <p>Прием и размещение</p>
+                            <div class="header-contact__link">
+                                <a href="tel:+74997558888">
+                                    <svg class="sprite-icon__header_phone">
+                                        <use href="img/icons/icons.svg#header_phone"></use>
+                                    </svg>
+                                </a>
+                                <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- home_main.html -->
+        <main class="main">
+
+    <section class="main__banner">
+        <div class="banner__container">
+            <div class="banner__block">
+                <div class="banner__block-title _anim-items _anim-no-hide">
+                    <h1>СОЛНЕЧНЫЙ<br><span>PARK-HOTEL & SPA</span></h1>
+                </div>
+                <form action="" method="GET" class="banner__block-booking booking-form _anim-items _anim-no-hide _anim-show">
+                    <div class="booking-form__cnt">
+                        <div class="booking-form__inputs">
+                            <div class="booking-form__input">
+                                <label for="date_in">Дата заезда: </label>
+                                <input required id="date_in" type="date" name="date_in" value="">
+                            </div>
+                            <div class="booking-form__input">
+                                <label for="date_out">Дата выезда: </label>
+                                <input required id="date_out" type="date" name="date_out" value="">
+                            </div>
+                            <div class="booking-form__input adult-input">
+                                <label for="adult_count">Взрослых </label>
+                                <input required readonly id="adult_count" type="text" name="adult_count" value="1" maxlength="3">
+                                <div class="booking-form__input-buttons">
+                                    <button class="count-button adult_count-increase">+</button>
+                                    <button class="count-button adult_count-decrease">-</button>
+                                </div>
+                            </div>
+                            <div class="booking-form__input child-input">
+                                <label for="child_count">Детей 2-11 лет </label>
+                                <input required readonly id="child_count" type="text" name="child_count" value="0" maxlength="3">
+                                <div class="booking-form__input-buttons">
+                                    <button class="count-button child_count-increase">+</button>
+                                    <button class="count-button child_count-decrease">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-form__check">
+                            <input checked id="some_rooms" type="checkbox" name="agreement" value="">
+                            <label for="some_rooms" class="custom-checkbox">
+                                <svg class="sprite-icon__home_galka-banner">
+                                    <use href="img/icons/icons.svg#home_galka-banner"></use>
+                                </svg>
+                            </label>
+                            <p>Несколько номеров</p>
+                        </div>
+                    </div>
+                    <button class="booking-form__button common-button__fill" type="submit">
+                        <svg class="sprite-icon__home_search-banner">
+                            <use href="files/sprite.svg#search_banner"></use>
+                        </svg>
+                        искать
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__stock _anim-items _anim-show">
+        <div class="stock__container">
+            <div class="stock__block">
+                <div class="stock__block-cashback">
+                    <h2 class="stock-cashback__title">УЧАСТВУЙ В АКЦИИ! КЕШБЭК 20% ПРИ ОПЛАТЕ КАРТАМИ БАНКОВ-ПАРТНЕРОВ</h2>
+                    <p>Оплачивайте поездку от трех ночей с помощью карт наших банков-партнеров и получаете кэшбек 20% с каждой оплаты.</p>
+                    <p>ВТБ Банк, Райффайзен Банк, МТС Банк, ПромСвязьБанк, РоссельхозБанс, РосБанк.</p>
+                </div>
+                <div class="stock__block-booking">
+                    <div class="stock-booking__banks">
+                        <div class="stock-booking__banks-mobile">
+                            <svg class="sprite-icon__home_vtb-stock stock-booking__bank">
+                                <use href="img/icons/icons.svg#home_vtb-stock"></use>
+                            </svg>
+                            <svg class="sprite-icon__home_raifaizen-stock stock-booking__bank">
+                                <use href="img/icons/icons.svg#home_raifaizen-stock"></use>
+                            </svg>
+                        </div>
+                        <div class="stock-booking__banks-mobile">
+                            <svg class="sprite-icon__home_psb-stock stock-booking__bank">
+                                <use href="img/icons/icons.svg#home_psb-stock"></use>
+                            </svg>
+                            <svg class="sprite-icon__home_rossbank-stock stock-booking__bank">
+                                <use href="img/icons/icons.svg#home_rossbank-stock"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <a href="" class="stock-booking__button">перейти к бронированию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__gallery">
+        <div class="gallery__container">
+            <div class="gallery__block">
+                <h2 class="gallery__title common-title _anim-items _anim-show">Галерея</h2>
+                <div class="gallery__image-items">
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_1.png" class="gallery__image-item _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_1.webp" type="image/webp"><img src="img/main/home-page/gallery/img_1.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_2.png" class="gallery__image-item _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_2.webp" type="image/webp"><img src="img/main/home-page/gallery/img_2.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img-huge.png" class="gallery__image-item gallery__image-item-big gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img-huge.webp" type="image/webp"><img src="img/main/home-page/gallery/img-huge.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_3.png" class="gallery__image-item _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_3.webp" type="image/webp"><img src="img/main/home-page/gallery/img_3.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_4.png" class="gallery__image-item _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_4.webp" type="image/webp"><img src="img/main/home-page/gallery/img_4.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_5.png" class="gallery__image-item _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_5.webp" type="image/webp"><img src="img/main/home-page/gallery/img_5.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_6.png" class="gallery__image-item _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_6.webp" type="image/webp"><img src="img/main/home-page/gallery/img_6.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_7.png" class="gallery__image-item gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_7.webp" type="image/webp"><img src="img/main/home-page/gallery/img_7.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_8.png" class="gallery__image-item gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_8.webp" type="image/webp"><img src="img/main/home-page/gallery/img_8.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_9.png" class="gallery__image-item gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_9.webp" type="image/webp"><img src="img/main/home-page/gallery/img_9.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_10.png" class="gallery__image-item gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_10.webp" type="image/webp"><img src="img/main/home-page/gallery/img_10.png" alt=""></picture>
+                    </a>
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_11.png" class="gallery__image-item gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_11.webp" type="image/webp"><img src="img/main/home-page/gallery/img_11.png" alt=""></picture>
+                    </a>           
+                    <a data-fslightbox="gallery" href="img/main/home-page/gallery/img_12.png" class="gallery__image-item gallery__image-hidden _anim-items">
+                        <picture><source srcset="img/main/home-page/gallery/img_12.webp" type="image/webp"><img src="img/main/home-page/gallery/img_12.png" alt=""></picture>
+                    </a>
+                </div>
+                <a href="/gallery.html" class="gallery__button common-button__transparent">вся галерея</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__news">
+        <div class="news__container">
+            <div class="news__block">
+                <h2 class="news__block-title common-title _anim-items _anim-show">Новости</h2>
+                <div class="news__block-cnt">
+                    <div class="news__cnt-items">
+                        <div class="news__cnt-item news-item _anim-items _anim-show">
+                            <h3 class="news-item__title">день spa</h3>
+                            <p class="news-item__date">23 Августа 2019, 14:56</p>
+                            <div class="news-item__text">
+                                Дорогие гости! Теперь Вы можете приехать к нам просто, чтобы посетить SPA. Такой визит будет стоить 6 700 рублей (в данную стоимость включена сумма 2 400 руб. в счёт трат в SPA-центре, на любые процедуры в beauty-зоне или на покупку профессиональной косметики на выбор). Более подробно о таком варианте отдыха можно узнать по телефону 8 499 755 88 88.
+                            </div>
+                        </div>
+                        <div class="news__cnt-item news-item _anim-items _anim-show">
+                            <h3 class="news-item__title">день spa</h3>
+                            <p class="news-item__date">23 Августа 2019, 14:56</p>
+                            <div class="news-item__text">
+                                Дорогие гости! Теперь Вы можете приехать к нам просто, чтобы посетить SPA. Такой визит будет стоить 6 700 рублей (в данную стоимость включена сумма 2 400 руб. в счёт трат в SPA-центре, на любые процедуры в beauty-зоне или на покупку профессиональной косметики на выбор). Более подробно о таком варианте отдыха можно узнать по телефону 8 499 755 88 88.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__cnt-items">
+                        <div class="news__cnt-item news-item _anim-items _anim-show">
+                            <h3 class="news-item__title">НОВЫЙ РЕСТОРАН В СОЛНЕЧНОМ!</h3>
+                            <p class="news-item__date">7 Марта 2019, 12:21</p>
+                            <div class="news-item__text">
+                                В Отеле открылся новый панорамный <br>ресторан шведской линии – ЧЕРДАК LOFT!
+                            </div>
+                        </div>
+                        <div class="news__cnt-item news-item _anim-items _anim-show">
+                            <h3 class="news-item__title">НОВЫЙ РЕСТОРАН В СОЛНЕЧНОМ!</h3>
+                            <p class="news-item__date">7 Марта 2019, 12:21</p>
+                            <div class="news-item__text">
+                                В Отеле открылся новый панорамный <br>ресторан шведской линии – ЧЕРДАК LOFT!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/news.html" class="news__block-button common-button__transparent">все новости</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__search">
+        <div class="search__container">
+            <div class="search__block">
+                <div class="search__block-map map-block _anim-items">
+                    <h2 class="map-block__title search-title__common">Как найти <br>наш отель</h2>
+                    <div class="map-block__gps">
+                        <span>GPS-КООРДИНАТЫ</span>
+                        <p>56.254726 северной широты</p>
+                        <p>36.888351 восточной долготы</p>
+                        <a href="" class="common-button__transparent">смотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="search__block-hotels hotels-block _anim-items">
+                    <div class="hotels-block__img">
+                        <picture><source srcset="img/main/home-page/search/club.webp" type="image/webp"><img src="img/main/home-page/search/club.png" alt="club"></picture>
+                    </div>
+                    <div class="hotels-block__invite">
+                        <h2 class="search-title__common">Посетите так же<br>наши другие отели</h2>
+                        <div class="hotels-block__invite-img">
+                            <picture><source srcset="img/main/home-page/search/club.webp" type="image/webp"><img src="img/main/home-page/search/club.png" alt="club"></picture>
+                        </div>
+                        <a class="common-button__transparent" href="">прометей клуб</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+        <!-- footer.html -->
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__block">
+            
+            <div class="footer__logo common-logo _anim-items _anim-no-hide _anim-show">
+                <a href="/home.html">
+                    <svg class="sprite-icon__header-logo">
+                        <use href="img/icons/icons.svg#header_logo"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer__block-nav">
+                <nav class="footer__nav-block _anim-items _anim-no-hide">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link link-animation">Тарифы</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/rooms.html" class="footer__nav-link link-animation">номера</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link link-animation">Корпоративным клиентам</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/about.html" class="footer__nav-link link-animation">о нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav-block _anim-items _anim-no-hide">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/news.html" class="footer__nav-link link-animation">Новости</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/gallery.html" class="footer__nav-link link-animation">Галерея</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/contacts.html" class="footer__nav-link link-animation">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-contacts footer__block-contacts _anim-items _anim-no-hide">
+                <div class="header-contact">
+                    <p>Отдел бронирования</p>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+79259224200">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                    </div>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+79259224201">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-01</a>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <p>Прием и размещение</p>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+74997558888">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__block-social">
+                <p class="_anim-items _anim-no-hide _anim-show">© 2013 - 2022 г. СОЛНЕЧНЫЙ PARK-HOTEL & SPA. ВСЕ ПРАВА СОХРАНЕНЫ</p>
+                <div class="footer__social-items _anim-items">
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_vk-social">
+                            <use href="img/icons/icons.svg#footer_vk-social"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_facebook-social">
+                            <use href="img/icons/icons.svg#footer_facebook-social"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_instagram-social">
+                            <use href="img/icons/icons.svg#footer_instagram-social"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_youtube-social">
+                            <use href="img/icons/icons.svg#footer_youtube-social"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="js/app.min.js?_v=20221201231001"></script>
+</body>
+
+</html>

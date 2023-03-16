@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221201231001">
+    <link rel="shortcut icon" href="img/icons/logo.ico">
+    <title>Swiper</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header.html -->
+        <!-- !!! БАЗОВЫЙ HEADER С БУРГЕРОМ -->
+
+<header class="header">
+    <section class="header-block">
+        <div class="header__container">
+            <div class="header-contacts header__block-contacts _anim-items _anim-no-hide">
+                <div class="header-contact">
+                    <p>Отдел бронирования</p>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+79259224200">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <p>Прием и размещение</p>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+74997558888">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-logo common-logo _anim-items _anim-no-hide _anim-show">
+                <a href="/home.html">
+                    <svg class="sprite-icon__header-logo">
+                        <use href="img/icons/icons.svg#header_logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-actions _anim-items _anim-no-hide">
+                <div class="header-actions__simple">
+                    <div class="header-action action-language">
+                        <button class="language-selector__russian lang_selector">Ру</button>
+                        <button class="language-selector__english lang_selector">Eng</button>
+                    </div>
+                    <div class="header-action action-enter">
+                        <button class="action-enter__button">
+                            <svg class="sprite-icon__header_enter">
+                                <use href="img/icons/icons.svg#header_enter"></use>
+                            </svg>
+                            <span>Войти</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="header-action__burger ">
+                    <button class="header__burger-button">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню при клике на бургер -->
+    <section class="header__burger-menu ">
+        <div class="burger-menu__container">
+            <h1 class="burger-menu__title">Меню</h1>
+
+            <div class="burger-menu__navigation menu-nav">
+
+                <div class="menu-nav__column column-nav">
+                    <nav class="column-nav__block">
+                        <ul class="column-nav__list">
+                            <li class="column-nav__item drop-down__block-nav">
+                                <button class="drop-down__button">
+                                    Тарифы
+                                    <svg class="sprite-icon__header_vector-menu">
+                                        <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                    </svg>
+                                </button>
+                                <div class="drop-down__content-nav">
+                                    <div class="drop-down__list-nav">
+                                        <a href="" class="link-animation">Аренда VIP автомобиля</a>
+                                        <a href="" class="link-animation">Тарифы 2022-2023</a>
+                                        <a href="" class="link-animation">Новогодний тариф</a>
+                                        <a href="" class="link-animation">каникулы и подарки</a>
+                                        <a href="" class="link-animation">способы оплаты</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-nav__column column-nav">
+                    <nav class="column-nav__block">
+                        <ul class="column-nav__list">
+                            <li class="column-nav__item">
+                                <a href="/rooms.html" class="column-nav__link link-animation">номера</a>
+                            </li>
+                            <li class="column-nav__item drop-down__block-nav">
+                                <button class="drop-down__button">
+                                    Корпоративным клиентам
+                                    <svg class="sprite-icon__header_vector-menu">
+                                        <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                    </svg>
+                                </button>
+                                <div class="drop-down__content-nav">
+                                    <div class="drop-down__list-nav">
+                                        <a href="" class="link-animation">Конференц залы</a>
+                                        <a href="" class="link-animation">Банкеты</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-nav__column column-nav">
+                    <nav class="column-nav__block">
+                        <ul class="column-nav__list">
+                            <li class="column-nav__item">
+                                <a href="/about.html" class="column-nav__link link-animation">о нас</a>
+                            </li>
+                            <li class="column-nav__item drop-down__block-nav">
+                                <button class="drop-down__button">
+                                    Spa
+                                    <svg class="sprite-icon__header_vector-menu">
+                                        <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                    </svg>
+                                </button>
+                                <div class="drop-down__content-nav">
+                                    <div class="drop-down__list-nav">
+                                        <a href="" class="link-animation">Бассейны</a>
+                                        <a href="" class="link-animation">Сауны</a>
+                                        <a href="" class="link-animation">Спорт-комплекс</a>
+                                        <a href="" class="link-animation">SPA — меню </a>
+                                        <a href="" class="link-animation">Меню салона красоты</a>
+                                        <a href="" class="link-animation">SPA для двоих</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-nav__column column-nav">
+                    <nav class="column-nav__block">
+                        <ul class="column-nav__list">
+                            <li class="column-nav__item">
+                                <a href="/news.html" class="column-nav__link link-animation">новости</a>
+                            </li>
+                            <li class="column-nav__item">
+                                <a href="/gallery.html" class="column-nav__link link-animation">галерея</a>
+                            </li>
+                            <li class="column-nav__item drop-down__block-nav">
+                                <button class="drop-down__button">
+                                    Контакты
+                                    <svg class="sprite-icon__header_vector-menu">
+                                        <use href="img/icons/icons.svg#header_vector-menu"></use>
+                                    </svg>
+                                </button>
+                                <div class="drop-down__content-nav">
+                                    <div class="drop-down__list-nav">
+                                        <a href="/contacts.html" class="link-animation">Схема проезда</a>
+                                        <a href="" class="link-animation">Политика конфиденциальности</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="header-contacts burger-menu__contacts">
+                <div class="header-contact">
+                    <p>Отдел бронирования</p>
+                    <div class="header-contact__link">
+                        <a href="tel:+79259224200">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                    </div>
+                    <div class="header-contact__link">
+                        <a href="tel:+79259224201">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-01</a>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <p>Прием и размещение</p>
+                    <div class="header-contact__link">
+                        <a href="tel:+74997558888">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+        <!-- home_main.html -->
+        <main class="main">
+
+    <!-- Общая навигация на сайте -->
+    <section class="main__navigation">
+    <div class="navigation__container">
+        <div class="navigation__block">
+            <nav class="raw-nav__block">
+                <ul class="raw-nav__list">
+                    <li class="raw-nav__item">
+                        <a href="/home.html" class="raw-nav__link">Главная</a>
+                        <svg class="sprite-icon__navigation_vector">
+                            <use href="img/icons/icons.svg#navigation_vector"></use>
+                        </svg>
+                    </li>
+                    <li class="raw-nav__item">
+                        <a href="" class="raw-nav__link current__page-link">Swiper</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+    <div class="section__swiper">
+        <div class="swiper__container">
+            <!-- Главный контейнер слайдера -->
+            <!-- изменить направление слайдера: dir="rtl" Right-To-Left -->
+            <div class="swiper image-slider">
+                <!-- Обязательная оболочка -->
+                <div class="swiper-wrapper image-slider__wrapper">
+                    <!-- Слайды -->
+                    <!-- Добавить навигацию по хэшу: data-hash="slide-1" -->
+                    <div data-hash="slide-1" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_1.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_1.webp" type="image/webp"><img src="img/main/rooms-page/room_1.png" alt=""></picture>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-2" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_2.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_2.webp" type="image/webp"><img src="img/main/rooms-page/room_2.png" alt=""></picture>
+                        </div> -->
+
+                        <!-- Слайдер внутри слайдера: + ещё стили пишутся  (НЕ РАБОТАЕТ)-->
+                        <!-- <div class="swiper image-in-slider">
+                            <div class="image-in-slider__wrapper swiper-wrapper">
+                                <div class="image-in-slider__slide swiper-slide">
+                                    <div class="image-in-slider__image">
+                                        <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_1.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="image-in-slider__image">
+                                        <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_3.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="image-in-slider__image">
+                                        <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_4.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="image-in-slider__image">
+                                        <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_1.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination image-slider__pagination"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-3" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_3.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_3.webp" type="image/webp"><img src="img/main/rooms-page/room_3.png" alt=""></picture>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-4" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_4.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_4.webp" type="image/webp"><img src="img/main/rooms-page/room_4.png" alt=""></picture>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-5" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_1.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_1.webp" type="image/webp"><img src="img/main/rooms-page/room_1.png" alt=""></picture>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-6" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_2.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_2.webp" type="image/webp"><img src="img/main/rooms-page/room_2.png" alt=""></picture>
+                        </div> -->
+                    </div>
+                    <div data-hash="slide-7" class="swiper-slide image-slider__slide">
+                        <!-- Для ленивой загрузки иначе структура: -->
+                        <div class="image-slider__image">
+                            <picture><source data-srcset="img/1x1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main/rooms-page/room_3.png" src="img/1x1.png" class="swiper-lazy" alt=""></picture>
+                            <!-- Gif загрузки -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <!-- <div class="image-slider__image">
+                            <picture><source srcset="img/main/rooms-page/room_3.webp" type="image/webp"><img src="img/main/rooms-page/room_3.png" alt=""></picture>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Добавляем, если нам нужны стрелки управления -->
+                <div class="swiper-button-prev image-slider__prev"></div>
+                <div class="swiper-button-next image-slider__next"></div>
+
+                <!-- Добавляем, если нам нужна пагинация -->
+                <div class="swiper-pagination image-slider__pagination"></div>
+
+                <!-- Добавляем, если нам нужна полоса прокрутки (scrollbar) -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            
+        </div>
+    </div>
+
+              
+</main>
+        <!-- footer.html -->
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__block">
+            
+            <div class="footer__logo common-logo _anim-items _anim-no-hide _anim-show">
+                <a href="/home.html">
+                    <svg class="sprite-icon__header-logo">
+                        <use href="img/icons/icons.svg#header_logo"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer__block-nav">
+                <nav class="footer__nav-block _anim-items _anim-no-hide">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link link-animation">Тарифы</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/rooms.html" class="footer__nav-link link-animation">номера</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link link-animation">Корпоративным клиентам</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/about.html" class="footer__nav-link link-animation">о нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav-block _anim-items _anim-no-hide">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="/news.html" class="footer__nav-link link-animation">Новости</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/gallery.html" class="footer__nav-link link-animation">Галерея</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="/contacts.html" class="footer__nav-link link-animation">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-contacts footer__block-contacts _anim-items _anim-no-hide">
+                <div class="header-contact">
+                    <p>Отдел бронирования</p>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+79259224200">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-00</a>
+                    </div>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+79259224201">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (925) 922-42-01</a>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <p>Прием и размещение</p>
+                    <div class="header-contact__link link-animation">
+                        <a href="tel:+74997558888">
+                            <svg class="sprite-icon__header_phone">
+                                <use href="img/icons/icons.svg#header_phone"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+79259224200">+7 (499) 755-88-88</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__block-social">
+                <p class="_anim-items _anim-no-hide _anim-show">© 2013 - 2022 г. СОЛНЕЧНЫЙ PARK-HOTEL & SPA. ВСЕ ПРАВА СОХРАНЕНЫ</p>
+                <div class="footer__social-items _anim-items">
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_vk-social">
+                            <use href="img/icons/icons.svg#footer_vk-social"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_facebook-social">
+                            <use href="img/icons/icons.svg#footer_facebook-social"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_instagram-social">
+                            <use href="img/icons/icons.svg#footer_instagram-social"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__social-item">
+                        <svg class="sprite-icon__footer_youtube-social">
+                            <use href="img/icons/icons.svg#footer_youtube-social"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    
+    <script src="js/app.min.js?_v=20221201231001"></script>
+</body>
+
+</html>
